@@ -3,8 +3,8 @@ import { Box, Button, Input, Radio, Stack, Text } from "native-base";
 
 const Forms = () => {
     const fields = [
-        { label: "Name", type: "text" },
-        { label: "Age", type: "number" },
+        { label: "name", type: "text" },
+        { label: "age", type: "number" },
         { label: "Phone Number", type: "tel" },
         { label: "Password", type: "password" },
         { label: "Gender", type: "radio", options: ["Male", "Female", "Other"] },
@@ -70,7 +70,7 @@ const Forms = () => {
                                 <Radio.Group
                                     name={field.label}
                                     value={formData[field.label]}
-                                    onInput={(value) => handleInputChange(field.label, value)}
+                                    onChange={(value) => handleInputChange(field.label, value)}
                                 >
                                     {field.options.map((option) => (
                                         <Radio key={option} value={option} my="1">

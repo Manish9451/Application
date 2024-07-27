@@ -6,6 +6,7 @@ import FlatListData from './components/FlatListData';
 import Mydata from './components/Mydata';
 import Forms from './components/Forms';
 import Products from './components/products';
+import UpdateAndDelete from './components/UpdateAndDelete';
 import { NativeBaseProvider, theme } from 'native-base';
 
 
@@ -26,8 +27,11 @@ function App() {
 
         <Tab.Screen name="MyData" component={Mydata} />
 
+        <Tab.Screen name="UpdateDelete" component={UpdateAndDelete} />
+
       </Tab.Navigator>
    </View>
+ 
   </NavigationContainer>
 </NativeBaseProvider>
   
